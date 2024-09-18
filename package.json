@@ -1,0 +1,24 @@
+{
+  "name": "projeto-nodejs2.0",
+  "version": "1.0.0",
+  "description": "Este projeto é para adquirir mais familiaridade e experiências com projetos Node.js e reaplicar conceitos já aprendidos e depois ligá-lo à um projeto front-end.",
+  "main": "server.js",
+  "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "author": "Davi Soares",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.18.0"
+  }
+}
