@@ -3,7 +3,14 @@ import express from "express"
 
 import { PrismaClient } from '@prisma/client'
 
-import cors from 'cors'
+app.use(
+    cors({
+      origin: '*',
+      methods: ['GET', 'POST', 'PUT', 'DELETE'],
+      allowedHeaders: ['Content-Type', 'Authorization'],
+    }),
+  );
+  
 
 const prisma = new PrismaClient()
 
