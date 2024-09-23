@@ -5,13 +5,12 @@ import { PrismaClient } from '@prisma/client'
 
 app.use(
     cors({
-      origin: '*',
+      origin: 'https://cadastro-de-usuarios-2-0.netlify.app/',
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       allowedHeaders: ['Content-Type', 'Authorization'],
     }),
   );
   
-
 const prisma = new PrismaClient()
 
 const port = process.env.PORT || 3000
